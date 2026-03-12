@@ -46,7 +46,8 @@ def analyze(word):
     return render_template('analyze.html',
                            word=word,
                            num_chars=num_chars,
-                           num_vowels=num_vowels)
+                           num_vowels=num_vowels,
+                           reversed_word=reversed_word)
 
 
 # ============================================================

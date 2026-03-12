@@ -31,7 +31,7 @@ def hello(name):
 #  Each exercise asks you to add a new @app.route here
 # ============================================================
 
-# ---- Exercise 2: update your analyze route ----
+# ---- Exercise 3: update your analyze route again ----
 
 @app.route('/analyze/<word>')
 def analyze(word):

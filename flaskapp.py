@@ -38,6 +38,21 @@ def analyze(word):
     num_chars = len(word)
     return str(num_chars)
 
+# ---- Exercise 2: update your analyze route ----
+
+@app.route('/analyze/<word>')
+def analyze(word):
+    # Step 1: character count (already done)
+    num_chars = len(word)
+    num_vowels = 0  # replace this with your vowel-counting logic
+    for char in word.lower():
+        if char in 'aeiou':
+            num_vowels += 1
+    # render_template passes all variables into analyze.html
+    return render_template('analyze.html',
+                           word=word,
+                           num_chars=num_chars,
+                           num_vowels=num_vowels)
 
 
 # ============================================================

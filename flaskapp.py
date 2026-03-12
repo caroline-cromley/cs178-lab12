@@ -31,13 +31,6 @@ def hello(name):
 #  Each exercise asks you to add a new @app.route here
 # ============================================================
 
-# ---- Exercise 1: add this to flaskapp.py ----
-
-@app.route('/analyze/<word>')
-def analyze(word):
-    num_chars = len(word)
-    return str(num_chars)
-
 # ---- Exercise 2: update your analyze route ----
 
 @app.route('/analyze/<word>')

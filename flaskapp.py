@@ -41,6 +41,7 @@ def analyze(word):
     for char in word.lower():
         if char in 'aeiou':
             num_vowels += 1
+    reversed_word = word[::-1]
     # render_template passes all variables into analyze.html
     return render_template('analyze.html',
                            word=word,

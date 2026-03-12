@@ -1,4 +1,4 @@
-# Lab 12 - Caroline Cromley
+# Lab 12 - Caroline C
 
 from flask import Flask, render_template
 
